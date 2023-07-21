@@ -1,0 +1,8 @@
+.table_theme_dark {
+  color: #fff;
+  /* border: 1px red solid; */
+  row-gap: 80px;
+  padding-top: 80px;
+  box-sizing: border-box;
+  z-index: 1;
+}

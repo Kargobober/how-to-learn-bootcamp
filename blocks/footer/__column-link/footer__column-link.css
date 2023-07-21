@@ -1,0 +1,15 @@
+.footer__column-link:link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #fff;
+}
+
+.footer__column-link:visited {
+  color: #fff;
+}
+
+.footer__column-link:active {
+  color: red;
+}
