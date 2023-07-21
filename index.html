@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Permissions-Policy" content="ch-ua-form-factor">
   <title>Научиться учиться</title>
   <link rel="icon" href="./images/logo/fav-icon-education.svg">
   <link rel="stylesheet" href="./vendor/normalize.css">
@@ -15,10 +16,10 @@
     <h1 class="header__title">Научиться учиться</h1>
     <p class="header__subtitle">
       Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
-      <a class="header__link" href="#" target="_blank">Узнать &rarr;</a>
+      <a class="header__link translucent-link" href="#" target="_blank">Узнать &rarr;</a>
     </p>
-    <aside class="header__square-pic"></aside>
-    <img src="./images/header-image.png" alt="Главная иллюстрация &nbsp; фрагмент картины Фёдора Решетникова &quot;Опять двойка&quot;" class="header__main-illustration">
+    <aside class="header__square-pic rotate"></aside>
+    <img src="./images/header-image.png" alt="Главная иллюстрация — фрагмент картины Фёдора Решетникова &quot;Опять двойка&quot;" class="header__main-illustration">
   </header>
 
   <main class="content">
@@ -31,6 +32,55 @@
           <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
         </div>
       </article>
+    </section>
+
+    <section class="techniques">
+      <h2 class="section-title">Техники обучения</h2>
+      <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+      <ul class="cards">
+        <li class="cards__item">
+          <img src="./images/cards-attention.png" alt="Обложка книги &quot;101 эссе, которые изменят ваш образ жизни&quot; за авторством Брианны Уист."  class="cards__image">
+          <h3 class="cards__title">Два вида внимания</h3>
+          <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
+        </li>
+        <li class="cards__item">
+          <img src="./images/cards-recall.png" alt="Мраморная скульптура задумчивого мальчика." class="cards__image">
+          <h3 class="cards__title">Recall</h3>
+          <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+        </li>
+        <li class="cards__item">
+          <img src="./images/cards-interliving.png" alt="Вид на интерьер многолюдного, длинного и высокого помещения с многократно повторяющимися наклонными конструкциями, уходящими к потолку." class="cards__image">
+          <h3 class="cards__title">Интерливинг</h3>
+          <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+        </li>
+        <li class="cards__item">
+          <img src="./images/cards-question.png" alt="Белое помещение с человеком посередине и множеством отверстий в стенах." class="cards__image">
+          <h3 class="cards__title">Вопросы</h3>
+          <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+        </li>
+        <li class="cards__item">
+          <img src="./images/cards-competence.png" alt="Вид сбоку на руку, держащую полдюжины книг." class="cards__image">
+          <h3 class="cards__title">Иллюзия компетентности</h3>
+          <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="video">
+      <h2 class="section-title">Видео на TED</h2>
+      <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+      <ul class="video__iframes">
+        <li class="video__iframe"><iframe id="ytplayer" type="text/html" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY?modestbranding=1&iv_load_policy=3&SameSite=None" allow="fullscreen"></li>
+        <li class="video__iframe"></li>
+      </ul>
+    </section>
+
+    <section class="oakley"></section>
+
+    <section class="feynman">
+      <h2 class="feynman__title">Метод Фейнмана</h2>
+      <p class="feynman__subtitle">Выучить и не забыть.</p>
+      <a href="#" class="feynman__link translucent-link" target="_blank">Подробнее &rarr;</a>
     </section>
 
     <section class="digits">
@@ -74,14 +124,10 @@
       </ul>
     </section>
 
-    <section class="feynman">
-      <h2 class="feynman__title">Метод Фейнмана</h2>
-      <p class="feynman__subtitle">Выучить и не забыть.</p>
-      <a href="#" class="feynman__link" target="_blank">Подробнее &rarr;</a>
-    </section>
+    <section class="khan"></section>
 
     <section class="kaufman">
-      <aside class="kaufman__triangle"></aside>
+      <aside class="kaufman__triangle rotate"></aside>
       <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
       <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
       <ul class="table table_theme_dark">
@@ -127,6 +173,8 @@
         </li>
       </ul>
     </section>
+
+    <section class="resources"></section>
   </main>
 
   <footer class="footer">
@@ -138,17 +186,17 @@
       <nav class="footer__column footer__column_content_info">
         <h3 class="footer__column-heading">О Практикуме</h3>
         <ul class="footer__column-links">
-          <li><a class="footer__column-link" href="#">Главная</a></li>
-          <li><a class="footer__column-link" href="#">Концепция</a></li>
-          <li><a class="footer__column-link" href="#">Наставники</a></li>
+          <li><a class="footer__column-link translucent-link" href="#">Главная</a></li>
+          <li><a class="footer__column-link translucent-link" href="#">Концепция</a></li>
+          <li><a class="footer__column-link translucent-link" href="#">Наставники</a></li>
         </ul>
       </nav>
       <nav class="footer__column footer__column_content_social">
         <h3 class="footer__column-heading">Соцсети</h3>
         <ul class="footer__column-links">
-          <li><a class="footer__column-link" href="#" target="_blank"><img src="./images/youtube-icon.svg"> YouTube</a></li>
-          <li><a class="footer__column-link" href="#" target="_blank"><img src="./images/vk_color_white.svg"> ВКонтакте</a></li>
-          <li><a class="footer__column-link" href="#" target="_blank"><img src="./images/tiktok-icon.svg"> TikTok</a></li>
+          <li><a class="footer__column-link translucent-link" href="#" target="_blank"><img src="./images/youtube-icon.svg"> YouTube</a></li>
+          <li><a class="footer__column-link translucent-link" href="#" target="_blank"><img src="./images/vk_color_white.svg"> ВКонтакте</a></li>
+          <li><a class="footer__column-link translucent-link" href="#" target="_blank"><img src="./images/tiktok-icon.svg"> TikTok</a></li>
         </ul>
       </nav>
     </div>
