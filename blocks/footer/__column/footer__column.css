@@ -2,6 +2,5 @@
   display: flex;
   flex-direction: column;
   color: #fff;
-  height: 100%;
   justify-content: flex-start;
 }
